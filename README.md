@@ -59,8 +59,8 @@ root
 
 1. Clone the repository:
    ```bash
-   git clone <repository-url>
-   cd <repository-directory>
+   git clone https://github.com/SatyamAgarwal12345/micro-frontend.git
+   cd micro-frontend
    ```
 2. Install dependencies for each project:
    ```bash
