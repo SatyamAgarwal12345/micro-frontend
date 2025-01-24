@@ -1,0 +1,43 @@
+.cart-container-ice {
+    border: 3px solid blueviolet;
+    /* Light orange border for a cart-like feel */
+    border-radius: 8px;
+    /* Rounded corners */
+    background-color: aquamarine;
+    /* Light yellow background */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /* Subtle shadow */
+    padding: 16px;
+    /* Inner spacing */
+    width: 300px;
+    /* Fixed width */
+    margin: 20px auto;
+    /* Center alignment with spacing */
+    text-align: center;
+    /* Center-align content */
+    font-family: Arial, sans-serif;
+    /* Clean font */
+}
+
+.cart-title-ice {
+    font-size: 1.5rem;
+    /* Slightly larger font size */
+    font-weight: bold;
+    color: purple;
+    /* Darker text for the title */
+    margin-bottom: 10px;
+}
+
+.cart-item-ice {
+    font-size: 1.2rem;
+    /* Item font size */
+    color: #555;
+    /* Neutral text color */
+}
+
+.item-count {
+    font-weight: bold;
+    /* Bold count */
+    color: #e67e22;
+    /* Highlighted color for count */
+}

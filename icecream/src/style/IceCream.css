@@ -1,0 +1,12 @@
+.containers{
+    background-color: aquamarine;
+    padding: 30px;
+    border: 30px solid blueviolet;
+    border-radius: 20px;
+}
+.buttons{
+    background-color: purple;
+    border-radius: 10px;
+    padding: 6px;
+    margin-top: 20px;
+}
