@@ -5,6 +5,7 @@ This repository demonstrates the implementation of a micro-frontend architecture
 ---
 
 ## Table of Contents
+
 1. [Project Structure](#project-structure)
 2. [Setup Instructions](#setup-instructions)
 3. [Webpack Configuration Explained](#webpack-configuration-explained)
@@ -21,7 +22,11 @@ root
 ├── host
 │   ├── src
 │   │   ├── components
-│   │   │   └── Cart.jsx
+│   │   │   ├── CakeCart.jsx
+│   │   │   ├── IceCreamCart.jsx
+│   │   │   └── App.jsx
+│   │   ├── style
+│   │   │   └── cart.css
 │   │   └── utils
 │   │       └── pubSub.js
 │   └── webpack.config.js
@@ -46,10 +51,12 @@ root
 ## Setup Instructions
 
 ### Prerequisites
+
 - Node.js (v16 or higher)
 - npm or yarn
 
 ### Steps
+
 1. Clone the repository:
    ```bash
    git clone <repository-url>
@@ -75,6 +82,7 @@ root
 ## Webpack Configuration Explained
 
 ### Host Application
+
 ```javascript
 new ModuleFederationPlugin({
   name: "host",
@@ -92,11 +100,13 @@ new ModuleFederationPlugin({
   },
 });
 ```
+
 - **Remotes**: Declares micro-frontends (Cake and IceCream) that the Host can consume.
 - **Exposes**: Shares the `pubSub` utility for state management.
 - **Shared**: Ensures React and ReactDOM are singleton to prevent version conflicts.
 
 ### Cake Micro-Frontend
+
 ```javascript
 new ModuleFederationPlugin({
   name: "cake",
@@ -111,9 +121,11 @@ new ModuleFederationPlugin({
   },
 });
 ```
+
 - **Exposes**: Makes the Cake component and its local `pubSub` utility available.
 
 ### IceCream Micro-Frontend
+
 ```javascript
 new ModuleFederationPlugin({
   name: "icecream",
@@ -131,12 +143,14 @@ new ModuleFederationPlugin({
   },
 });
 ```
+
 - **Remotes**: Allows IceCream to consume the Host application.
 - **Exposes**: Shares its IceCream component and local `pubSub` utility.
 
 ---
 
 ## Running the Project
+
 - Start all micro-frontends and the host application using `npm start`.
 - Navigate to `http://localhost:3000` to view the integration.
 - Perform interactions in the Cake or IceCream micro-frontends to see updates in the Host's Cart component.
@@ -146,26 +160,63 @@ new ModuleFederationPlugin({
 ## Communication Between Microservices
 
 ### Using `pubSub`
+
 Each micro-frontend has its local `pubSub` utility. When an event occurs (e.g., adding an item), the utility broadcasts the event:
 
-#### Example: IceCream Component
+#### Example: Cake Component
+
 ```javascript
 import { pubSub } from "./utils/pubSub";
 
-pubSub.subscribe("updateCart", (data) => {
+pubSub.subscribe("cakeStateChange", (data) => {
+  console.log("Cart updated with Cake data:", data);
+});
+
+pubSub.publish("cakeStateChange", { count: 5 });
+```
+
+#### Example: IceCream Component
+
+```javascript
+import { pubSub } from "./utils/pubSub";
+
+pubSub.subscribe("iceCreamStateChange", (data) => {
   console.log("Cart updated with IceCream data:", data);
 });
 
-pubSub.publish("updateCart", { count: 2 });
+pubSub.publish("iceCreamStateChange", { count: 3 });
 ```
 
-### Ensuring Isolation
-- Each micro-frontend maintains its `pubSub` utility for internal communication, ensuring modularity.
-- Shared React dependencies ensure consistent rendering and avoid version conflicts.
+### Host Integration
+
+The Host application renders `CakeCart` and `IceCreamCart` components, which subscribe to `pubSub` events from their respective micro-frontends:
+
+#### `App.jsx`
+
+```javascript
+import React from "react";
+import CakeCart from "./components/CakeCart";
+import IceCreamCart from "./components/IceCreamCart";
+import Cake from "cakeMf/Cake";
+import IceCream from "iceCreamMf/IceCream";
+
+const App = () => (
+  <div>
+    <h1>Welcome to the Host Application</h1>
+    <Cake />
+    <IceCream />
+    <CakeCart />
+    <IceCreamCart />
+  </div>
+);
+
+export default App;
+```
 
 ---
 
 ## Key Features
+
 - Modular micro-frontend structure.
 - Independent state management using `pubSub` utilities.
 - Seamless integration using Webpack Module Federation.
