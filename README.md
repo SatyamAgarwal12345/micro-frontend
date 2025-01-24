@@ -65,15 +65,15 @@ root
 2. Install dependencies for each project:
    ```bash
    cd host && npm install
-   cd ../cake && npm install
-   cd ../icecream && npm install
+   cd cake && npm install
+   cd icecream && npm install
    ```
 3. Start the development servers:
    ```bash
    # In separate terminals
    cd host && npm start
-   cd ../cake && npm start
-   cd ../icecream && npm start
+   cd cake && npm start
+   cd icecream && npm start
    ```
 4. Open `http://localhost:3000` in your browser to view the Host application.
 
