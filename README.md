@@ -24,7 +24,7 @@ root
 │   │   ├── components
 │   │   │   ├── CakeCart.jsx
 │   │   │   ├── IceCreamCart.jsx
-│   │   │   └── App.jsx
+│   │   │   └── App.jsx----- 2 microsevices cake and icecream along with CakeCart and IcecreamCart
 │   │   ├── style
 │   │   │   └── cart.css
 │   │   └── utils
