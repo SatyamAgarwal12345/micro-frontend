@@ -44,7 +44,7 @@ module.exports = (_, argv) => ({
         type: "javascript/auto",
         resolve: {
           fullySpecified: false,
-        },
+        },    
       },
       {
         test: /\.(css|s[ac]ss)$/i,
