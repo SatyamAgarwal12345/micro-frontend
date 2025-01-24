@@ -75,7 +75,9 @@ root
    cd cake && npm start
    cd icecream && npm start
    ```
-4. Open `http://localhost:3000` in your browser to view the Host application.
+4. Open `http://localhost:4000` in your browser to view the Host application.
+5. Open `http://localhost:4001` in your browser to view the Cake Micro Front-end.
+6. Open `http://localhost:4001` in your browser to view the Ice Cream Micro Front-end.
 
 ---
 
