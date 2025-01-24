@@ -90,8 +90,8 @@ new ModuleFederationPlugin({
   name: "host",
   filename: "remoteEntry.js",
   remotes: {
-    cakeMf: "cake@http://localhost:3001/remoteEntry.js",
-    iceCreamMf: "icecream@http://localhost:3002/remoteEntry.js",
+    cakeMf: "cake@http://localhost:4001/remoteEntry.js",
+    iceCreamMf: "icecream@http://localhost:4002/remoteEntry.js",
   },
   exposes: {
     "./utils/pubSub": "./src/utils/pubSub.js",
@@ -133,7 +133,7 @@ new ModuleFederationPlugin({
   name: "icecream",
   filename: "remoteEntry.js",
   remotes: {
-    host: "host@http://localhost:3000/remoteEntry.js",
+    host: "host@http://localhost:4000/remoteEntry.js",
   },
   exposes: {
     "./IceCream": "./src/components/newIC.jsx",
@@ -154,7 +154,7 @@ new ModuleFederationPlugin({
 ## Running the Project
 
 - Start all micro-frontends and the host application using `npm start`.
-- Navigate to `http://localhost:3000` to view the integration.
+- Navigate to `http://localhost:4000` to view the integration.
 - Perform interactions in the Cake or IceCream micro-frontends to see updates in the Host's Cart component.
 
 ---
