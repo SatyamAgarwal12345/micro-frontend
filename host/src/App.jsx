@@ -2,12 +2,9 @@ import React, { useState, useEffect } from "react";
 import ReactDOM from "react-dom/client";
 import CakeComponent from "cakeMf/Cake"
 import IceCreamComponent from "iceCreamMf/IceCream"
-
-
-
-import "./index.scss";
-import IceccreamCart from "./IcecreamCart";
-import CakeCart from "./CakeCart";
+import CakeCart from './components/CakeCart'
+import IceccreamCart from './components/IcecreamCart'
+import "./index.scss"
 const App = () => {
   return (
     <>

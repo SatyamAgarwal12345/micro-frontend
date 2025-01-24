@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { pubSub } from "cakeMf/utils/pubSub"
-import "./style/cake.css"
+import "../style/cake.css"
 
 const CakeCart = () => {
   const [cakeCount, setCakeCount] = useState(20);

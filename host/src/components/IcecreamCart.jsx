@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { pubSub } from "iceCreamMf/utils/pubSub"
-import "../src/style/icecream.css"
+import "../style/icecream.css"
 
 const IcecreamCart = () => {
   const [iceCreamCount, setIceCreamCount] = useState(20);
