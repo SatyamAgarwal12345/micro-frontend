@@ -18,7 +18,7 @@ This repository demonstrates the implementation of a micro-frontend architecture
 ## Project Structure
 
 ```plaintext
-root
+root (micro-frontend)
 ├── host
 │   ├── src
 │   │   ├── components
