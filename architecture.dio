@@ -1,0 +1,212 @@
+<mxfile host="65bd71144e">
+    <diagram id="mPupsww7b0l2-wbsLfPn" name="Page-1">
+        <mxGraphModel dx="1004" dy="345" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="3" value="micro-front-end with pubSub" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="370" y="10" width="100" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="4" value="" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="80" y="90" width="330" height="360" as="geometry"/>
+                </mxCell>
+                <mxCell id="5" value="HOST APPLICATION" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="85" y="57" width="160" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="7" value="" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="660" y="282.5" width="150" height="147.5" as="geometry"/>
+                </mxCell>
+                <mxCell id="8" value="&lt;span style=&quot;color: rgba(0, 0, 0, 0); font-family: monospace; font-size: 0px; text-align: start;&quot;&gt;%3CmxGraphModel%3E%3Croot%3E%3CmxCell%20id%3D%220%22%2F%3E%3CmxCell%20id%3D%221%22%20parent%3D%220%22%2F%3E%3CmxCell%20id%3D%222%22%20value%3D%22stock%22%20style%3D%22rounded%3D1%3BwhiteSpace%3Dwrap%3Bhtml%3D1%3BarcSize%3D50%3B%22%20vertex%3D%221%22%20parent%3D%221%22%3E%3CmxGeometry%20x%3D%22310%22%20y%3D%22200%22%20width%3D%2240%22%20height%3D%2225%22%20as%3D%22geometry%22%2F%3E%3C%2FmxCell%3E%3C%2Froot%3E%3C%2FmxGraphModel%3E&lt;/span&gt;" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="660" y="94" width="150" height="150" as="geometry"/>
+                </mxCell>
+                <mxCell id="9" value="icecream mf" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="660" y="244" width="80" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="10" value="cake mf" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="660" y="57" width="60" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="29" style="edgeStyle=none;html=1;entryX=-0.044;entryY=0.191;entryDx=0;entryDy=0;startArrow=none;entryPerimeter=0;" parent="1" source="44" target="8" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="650" y="180" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="48" style="edgeStyle=none;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;startArrow=none;" parent="1" source="51" target="39" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="11" value="30" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="250" y="140" width="110" height="90" as="geometry"/>
+                </mxCell>
+                <mxCell id="28" style="edgeStyle=none;html=1;startArrow=none;" parent="1" source="50" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="660" y="300" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="49" style="edgeStyle=none;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;startArrow=none;" parent="1" source="45" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="190" y="330" as="sourcePoint"/>
+                        <mxPoint x="159" y="377" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="12" value="20" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="245" y="300" width="120" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="14" value="cake mf" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="250" y="105" width="60" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="15" value="ice mf" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="250" y="260" width="60" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="102" style="edgeStyle=orthogonalEdgeStyle;html=1;startArrow=none;" edge="1" parent="1" source="82" target="71">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="39" value="30" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="90" y="185" width="70" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="105" style="edgeStyle=entityRelationEdgeStyle;html=1;entryX=0;entryY=0.3;entryDx=0;entryDy=0;startArrow=none;entryPerimeter=0;" edge="1" parent="1" source="83" target="72">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="40" value="20" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="89" y="350" width="70" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="41" value="cake cart" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="90" y="235" width="60" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="42" value="ice cart" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="90" y="400" width="60" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="52" value="" style="edgeStyle=none;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;endArrow=none;" parent="1" source="11" target="51" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="260" y="184.65517241379314" as="sourcePoint"/>
+                        <mxPoint x="160" y="195" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="51" value="data flow" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="185" y="175" width="50" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="53" value="" style="edgeStyle=none;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=-0.01;exitY=0.357;exitDx=0;exitDy=0;exitPerimeter=0;endArrow=none;" parent="1" source="12" target="45" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="259.20000000000005" y="288.55999999999995" as="sourcePoint"/>
+                        <mxPoint x="160" y="305" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="45" value="data flow" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="185" y="330" width="40" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="64" value="stock" style="rounded=1;whiteSpace=wrap;html=1;arcSize=50;" parent="1" vertex="1">
+                    <mxGeometry x="310" y="360" width="40" height="25" as="geometry"/>
+                </mxCell>
+                <mxCell id="65" value="buy" style="rounded=1;whiteSpace=wrap;html=1;arcSize=50;" parent="1" vertex="1">
+                    <mxGeometry x="260" y="360" width="40" height="25" as="geometry"/>
+                </mxCell>
+                <mxCell id="68" value="buy" style="rounded=1;whiteSpace=wrap;html=1;arcSize=50;" parent="1" vertex="1">
+                    <mxGeometry x="260" y="200" width="40" height="25" as="geometry"/>
+                </mxCell>
+                <mxCell id="70" value="stock" style="rounded=1;whiteSpace=wrap;html=1;arcSize=50;" parent="1" vertex="1">
+                    <mxGeometry x="310" y="200" width="40" height="25" as="geometry"/>
+                </mxCell>
+                <mxCell id="71" value="pubSub" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="690" y="195" width="70" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="72" value="pubSub" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="680" y="376" width="70" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="79" value="" style="edgeStyle=none;html=1;endArrow=none;" edge="1" parent="1" source="12" target="50">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="660" y="300" as="targetPoint"/>
+                        <mxPoint x="360" y="295.7746478873239" as="sourcePoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="50" value="Exposed" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="510" y="285" width="60" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="80" value="" style="edgeStyle=none;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endArrow=none;" edge="1" parent="1" source="11" target="44">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="660" y="185" as="targetPoint"/>
+                        <mxPoint x="360" y="185" as="sourcePoint"/>
+                        <Array as="points"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="44" value="Exposed" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="500" y="110" width="60" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="99" style="edgeStyle=none;html=1;exitX=0.75;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="88" target="71">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="88" value="buy" style="rounded=1;whiteSpace=wrap;html=1;arcSize=50;" vertex="1" parent="1">
+                    <mxGeometry x="670" y="133" width="40" height="25" as="geometry"/>
+                </mxCell>
+                <mxCell id="100" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.714;entryY=0.1;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="89" target="71">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="730" y="180" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="89" value="stock" style="rounded=1;whiteSpace=wrap;html=1;arcSize=50;" vertex="1" parent="1">
+                    <mxGeometry x="730" y="130" width="40" height="25" as="geometry"/>
+                </mxCell>
+                <mxCell id="92" value="30" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="655" y="100" width="60" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="93" value="29" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="660" y="282" width="60" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="97" style="edgeStyle=none;html=1;exitX=0.75;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="94" target="72">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="94" value="buy" style="rounded=1;whiteSpace=wrap;html=1;arcSize=50;" vertex="1" parent="1">
+                    <mxGeometry x="670" y="310" width="40" height="25" as="geometry"/>
+                </mxCell>
+                <mxCell id="98" value="" style="edgeStyle=none;html=1;" edge="1" parent="1" source="95" target="72">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="95" value="stock" style="rounded=1;whiteSpace=wrap;html=1;arcSize=50;" vertex="1" parent="1">
+                    <mxGeometry x="730" y="308" width="40" height="25" as="geometry"/>
+                </mxCell>
+                <mxCell id="103" value="" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=none;startArrow=none;" edge="1" parent="1" source="107" target="82">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="160.00000000000023" y="210" as="sourcePoint"/>
+                        <mxPoint x="690" y="210" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="82" value="exposed" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="560" y="195" width="60" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="106" value="" style="edgeStyle=none;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endArrow=none;startArrow=none;" edge="1" parent="1" source="110" target="83">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="149.91032674381222" y="376.78843887007235" as="sourcePoint"/>
+                        <mxPoint x="690.0000000000057" y="405" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="83" value="exposed" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="560" y="360" width="60" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="109" value="" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=none;" edge="1" parent="1" source="39" target="107">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="160.00000000000023" y="210" as="sourcePoint"/>
+                        <mxPoint x="529.9999999999998" y="210" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="107" value="subscribe" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="450" y="195" width="60" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="112" value="" style="edgeStyle=none;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endArrow=none;" edge="1" parent="1" source="40" target="110">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="150.00000000000023" y="375" as="sourcePoint"/>
+                        <mxPoint x="529.9999999999998" y="375" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="110" value="subscribe" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="450" y="360" width="60" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="114" value="&lt;h3&gt;&lt;strong&gt;Explanation of the Flowchart&lt;/strong&gt;&lt;/h3&gt;&lt;p&gt;&lt;b&gt;The diagram illustrates the architecture and data flow of a Micro-Frontend (MF) Application with the following components:&lt;/b&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;strong&gt;Host Application&lt;/strong&gt;&lt;ul&gt;&lt;li&gt;&lt;b&gt;Acts as the main container for the micro-frontends.&lt;/b&gt;&lt;/li&gt;&lt;li&gt;&lt;b&gt;Displays two cart components: &lt;code&gt;Cake Cart&lt;/code&gt; and &lt;code&gt;Ice Cream Cart&lt;/code&gt;.&lt;/b&gt;&lt;/li&gt;&lt;li&gt;&lt;b&gt;Subscribes to updates via the exposed &lt;code&gt;pubSub&lt;/code&gt; utilities from their respective micro-frontends (&lt;code&gt;cakeMf&lt;/code&gt; and &lt;code&gt;iceCreamMf&lt;/code&gt;).&lt;/b&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;&lt;hr&gt;&lt;h3&gt;&lt;strong&gt;Components and Flow&lt;/strong&gt;:&lt;/h3&gt;&lt;h4&gt;&lt;strong&gt;1. Cake Micro-Frontend (&lt;code&gt;cakeMf&lt;/code&gt;)&lt;/strong&gt;:&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;&lt;b&gt;Features:&lt;/b&gt;&lt;ul&gt;&lt;li&gt;&lt;b&gt;Manages the state for cake-related actions (e.g., stock and buy operations).&lt;/b&gt;&lt;/li&gt;&lt;li&gt;&lt;b&gt;Contains the &lt;code&gt;pubSub&lt;/code&gt; utility that facilitates the sharing of events and data updates.&lt;/b&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;li&gt;&lt;b&gt;Flow:&lt;/b&gt;&lt;ol&gt;&lt;li&gt;&lt;b&gt;The Cake Cart in the Host Application subscribes to &lt;code&gt;pubSub&lt;/code&gt; events exposed by &lt;code&gt;cakeMf&lt;/code&gt;.&lt;/b&gt;&lt;/li&gt;&lt;li&gt;&lt;b&gt;When the cake stock or buy action occurs in the &lt;code&gt;cakeMf&lt;/code&gt;, the updated state is published using &lt;code&gt;pubSub&lt;/code&gt;.&lt;/b&gt;&lt;/li&gt;&lt;li&gt;&lt;b&gt;The subscribed &lt;code&gt;Cake Cart&lt;/code&gt; receives the updated state and reflects it in the cart interface.&lt;/b&gt;&lt;/li&gt;&lt;/ol&gt;&lt;/li&gt;&lt;li&gt;&lt;b&gt;Exposed Functionality:&lt;/b&gt;&lt;ul&gt;&lt;li&gt;&lt;b&gt;Publishes updates (e.g., stock or purchase changes).&lt;/b&gt;&lt;/li&gt;&lt;li&gt;&lt;b&gt;Allows the Host Application to access cake-specific features.&lt;/b&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;&lt;hr&gt;&lt;h4&gt;&lt;strong&gt;2. Ice Cream Micro-Frontend (&lt;code&gt;iceCreamMf&lt;/code&gt;)&lt;/strong&gt;:&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;&lt;b&gt;Features:&lt;/b&gt;&lt;ul&gt;&lt;li&gt;&lt;b&gt;Manages the state for ice cream-related actions (e.g., stock and buy operations).&lt;/b&gt;&lt;/li&gt;&lt;li&gt;&lt;b&gt;Contains its own &lt;code&gt;pubSub&lt;/code&gt; utility for handling state updates.&lt;/b&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;li&gt;&lt;b&gt;Flow:&lt;/b&gt;&lt;ol&gt;&lt;li&gt;&lt;b&gt;The Ice Cream Cart in the Host Application subscribes to &lt;code&gt;pubSub&lt;/code&gt; events exposed by &lt;code&gt;iceCreamMf&lt;/code&gt;.&lt;/b&gt;&lt;/li&gt;&lt;li&gt;&lt;b&gt;When the ice cream stock or buy action occurs in the &lt;code&gt;iceCreamMf&lt;/code&gt;, the updated state is published using &lt;code&gt;pubSub&lt;/code&gt;.&lt;/b&gt;&lt;/li&gt;&lt;li&gt;&lt;b&gt;The subscribed &lt;code&gt;Ice Cream Cart&lt;/code&gt; receives the updated state and reflects it in the cart interface.&lt;/b&gt;&lt;/li&gt;&lt;/ol&gt;&lt;/li&gt;&lt;li&gt;&lt;b&gt;Exposed Functionality:&lt;/b&gt;&lt;ul&gt;&lt;li&gt;&lt;b&gt;Publishes updates for ice cream-related actions.&lt;/b&gt;&lt;/li&gt;&lt;li&gt;&lt;b&gt;Enables interaction with the Host Application.&lt;/b&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;&lt;hr&gt;&lt;h4&gt;&lt;strong&gt;3. Host Application&lt;/strong&gt;:&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;&lt;b&gt;Features:&lt;/b&gt;&lt;ul&gt;&lt;li&gt;&lt;b&gt;Integrates and renders both &lt;code&gt;Cake Cart&lt;/code&gt; and &lt;code&gt;Ice Cream Cart&lt;/code&gt; components.&lt;/b&gt;&lt;/li&gt;&lt;li&gt;&lt;b&gt;Subscribes to &lt;code&gt;pubSub&lt;/code&gt; utilities from both micro-frontends for real-time state updates.&lt;/b&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;li&gt;&lt;b&gt;Flow:&lt;/b&gt;&lt;ol&gt;&lt;li&gt;&lt;b&gt;The &lt;code&gt;Cake Cart&lt;/code&gt; subscribes to the &lt;code&gt;cakeMf&lt;/code&gt; &lt;code&gt;pubSub&lt;/code&gt; for updates on cake-related actions.&lt;/b&gt;&lt;/li&gt;&lt;li&gt;&lt;b&gt;Similarly, the &lt;code&gt;Ice Cream Cart&lt;/code&gt; subscribes to the &lt;code&gt;iceCreamMf&lt;/code&gt; &lt;code&gt;pubSub&lt;/code&gt; for ice cream-related updates.&lt;/b&gt;&lt;/li&gt;&lt;li&gt;&lt;b&gt;Data flows from the micro-frontends to the respective carts, enabling real-time synchronization of the UI with state changes.&lt;/b&gt;&lt;/li&gt;&lt;/ol&gt;&lt;/li&gt;&lt;/ul&gt;&lt;hr&gt;&lt;h3&gt;&lt;strong&gt;Key Connections&lt;/strong&gt;:&lt;/h3&gt;&lt;ol&gt;&lt;li&gt;&lt;b&gt;Exposed Utilities:&lt;/b&gt;&lt;ul&gt;&lt;li&gt;&lt;b&gt;Both &lt;code&gt;cakeMf&lt;/code&gt; and &lt;code&gt;iceCreamMf&lt;/code&gt; expose their &lt;code&gt;pubSub&lt;/code&gt; utilities to the Host Application.&lt;/b&gt;&lt;/li&gt;&lt;li&gt;&lt;b&gt;These utilities are central to managing and communicating state updates.&lt;/b&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;li&gt;&lt;b&gt;Subscriptions:&lt;/b&gt;&lt;ul&gt;&lt;li&gt;&lt;b&gt;The &lt;code&gt;Cake Cart&lt;/code&gt; subscribes to cake-specific updates via the &lt;code&gt;cakeMf&lt;/code&gt; &lt;code&gt;pubSub&lt;/code&gt;.&lt;/b&gt;&lt;/li&gt;&lt;li&gt;&lt;b&gt;The &lt;code&gt;Ice Cream Cart&lt;/code&gt; subscribes to ice cream-specific updates via the &lt;code&gt;iceCreamMf&lt;/code&gt; &lt;code&gt;pubSub&lt;/code&gt;.&lt;/b&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;li&gt;&lt;b&gt;Data Flow:&lt;/b&gt;&lt;ul&gt;&lt;li&gt;&lt;b&gt;State changes (e.g., buy or stock actions) in the micro-frontends propagate through &lt;code&gt;pubSub&lt;/code&gt; to the Host Application's carts, ensuring the UI is always up-to-date.&lt;/b&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;/ol&gt;&lt;hr&gt;&lt;h3&gt;&lt;strong&gt;Conclusion&lt;/strong&gt;:&lt;/h3&gt;&lt;p&gt;&lt;b&gt;This architecture demonstrates a loosely coupled micro-frontend approach where:&lt;/b&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;b&gt;Each micro-frontend manages its own logic and state.&lt;/b&gt;&lt;/li&gt;&lt;li&gt;&lt;b&gt;The Host Application acts as a container and consumer of the micro-frontends' exposed functionality.&lt;/b&gt;&lt;/li&gt;&lt;li&gt;&lt;b&gt;Communication between micro-frontends and the host relies on the &lt;code&gt;pubSub&lt;/code&gt; pattern for seamless state sharing and event propagation.&lt;/b&gt;&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;b&gt;This setup ensures modularity, maintainability, and scalability, making it ideal for collaborative and distributed development environments.&lt;/b&gt;&lt;/p&gt;" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="30" y="560" width="800" height="1600" as="geometry"/>
+                </mxCell>
+                <mxCell id="115" value="publish" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="691" y="334" width="60" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="116" value="publish" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="697" y="156" width="60" height="30" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>

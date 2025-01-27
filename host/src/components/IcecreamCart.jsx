@@ -20,6 +20,8 @@ const IcecreamCart = () => {
     <div className="cart-container-ice">
       <h2 className="cart-title-ice">Cart</h2>
       <p className="cart-item-ice">🍦 IceCream Count: <span className="item-count">{iceCreamCount}</span></p>
+      {/* <button>buy</button><br></br>
+      <button>restore</button> */}
     </div>
 
   );
