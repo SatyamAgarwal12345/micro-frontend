@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import "../style/Cake.css";
 import { useSelector, useDispatch } from "react-redux";
 import {decrement,increment} from '../redux/cartSlice'
@@ -9,6 +9,8 @@ import { pubSub } from "../utils/pubSub";
 const Cake = () => {
   const dispatch = useDispatch();
   const data = useSelector((store) => store.cart);
+  const [hostCakeData,setHostCakeData] = useState()
+  
   
   function handlBuyCake() {
     dispatch(decrement());
@@ -16,8 +18,12 @@ const Cake = () => {
   function handleRestoreBuyCake() {
     dispatch(increment());
   }
+  function handleHostCakeState(data){
+    setHostCakeData(data.count)
+  }
     useEffect(() => {
       pubSub.publish("cakeStateChange", { count: data });
+      pubSub.subscribe('hostCakeState',handleHostCakeState)
     }, [data]);
   return (
     <div className="container">
@@ -31,7 +37,8 @@ const Cake = () => {
       <br></br>
       <button className="button" onClick={handleRestoreBuyCake}>
         Restore
-      </button>
+      </button><br></br>
+     <p className="paragraph">this data is coming from host {hostCakeData}</p>
     </div>
   );
 };

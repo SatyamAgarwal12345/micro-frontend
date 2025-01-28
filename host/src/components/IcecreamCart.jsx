@@ -3,7 +3,7 @@ import { pubSub } from "iceCreamMf/utils/pubSub"
 import "../style/icecream.css"
 
 const IcecreamCart = () => {
-  const [iceCreamCount, setIceCreamCount] = useState(20);
+  const [iceCreamCount, setIceCreamCount] = useState();
 
   useEffect(() => {
     const handleIceCreamStateChange = (data) => {
@@ -11,11 +11,15 @@ const IcecreamCart = () => {
       setIceCreamCount(data.count);
     };
     pubSub.subscribe("iceCreamStateChange", handleIceCreamStateChange);
+    hostPublishHandler()
     return () => {
       pubSub.unsubscribe("iceCreamStateChange", handleIceCreamStateChange);
     };
-  }, []);
+  }, [iceCreamCount]);
   console.log(pubSub);
+  function hostPublishHandler(){
+      pubSub.publish('hostIceCreamState',{count:iceCreamCount})
+  }
   return (
     <div className="cart-container-ice">
       <h2 className="cart-title-ice">Cart</h2>
