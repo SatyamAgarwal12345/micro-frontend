@@ -18,12 +18,12 @@ const Cake = () => {
   function handleRestoreBuyCake() {
     dispatch(increment());
   }
-  function handleHostCakeState(data){
+  function handleHostCakeCounter(data){
     setHostCakeData(data.count)
   }
     useEffect(() => {
       pubSub.publish("cakeStateChange", { count: data });
-      pubSub.subscribe('hostCakeState',handleHostCakeState)
+      pubSub.subscribe('hostCakeCounter',handleHostCakeCounter)
     }, [data]);
   return (
     <div className="container">

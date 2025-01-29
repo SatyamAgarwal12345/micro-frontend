@@ -12,10 +12,10 @@ const IceCream = () => {
 
   useEffect(() => {
     pubSub.publish("iceCreamStateChange", { count: data });
-    pubSub.subscribe('hostIceCreamState',handleHostIceCreamState)
+    pubSub.subscribe('hostIcrCreamCounter',handleHostIceCreamCounter)
     
   }, [data]);
-  function handleHostIceCreamState(data){
+  function handleHostIceCreamCounter(data){
     setHostIceCreamData(data.count)
   }
   function handleBuyIceCream() {

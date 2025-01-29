@@ -26,4 +26,30 @@
     font-weight: bold; /* Bold count */
     color: #e67e22; /* Highlighted color for count */
   }
+  button {
+    background-color: #6a5acd; /* SlateBlue color */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin: 10px;
+    transition: all 0.3s ease;
+  }
   
+  button:hover {
+    background-color: #483d8b; /* DarkSlateBlue color for hover effect */
+  }
+  
+  button:active {
+    background-color: #3a3b6d; /* Even darker color when clicked */
+  }
+  
+  button:focus {
+    outline: none;
+  }
+  
+  button + button {
+    margin-left: 10px;
+  }

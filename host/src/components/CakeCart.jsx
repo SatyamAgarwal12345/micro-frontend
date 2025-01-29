@@ -4,6 +4,7 @@ import "../style/cake.css"
 
 const CakeCart = () => {
   const [cakeCount, setCakeCount] = useState();
+  const [counter, setCounter] = useState(0);
   useEffect(() => {
     const handleCakeStateChange = (data) => {
       console.log("Cart received Cake data:", data);
@@ -14,18 +15,18 @@ const CakeCart = () => {
     return () => {
       pubSub.unsubscribe("cakeStateChange", handleCakeStateChange);
     };
-  }, [cakeCount]);
+  }, [cakeCount,counter]);
 
   function hostPublishHandler(){
-    pubSub.publish('hostCakeState',{count:cakeCount})
+    pubSub.publish('hostCakeCounter',{count:counter})
   }
   console.log(pubSub);
   return (
     <div className="cart-container">
       <h2 className="cart-title">Cart</h2>
       <p className="cart-item">🎂 Cake Count: <span className="item-count">{cakeCount}</span></p>
-      {/* <button onClick={hostPublishHandler}>buy</button><br></br>
-      <button>restore</button> */}
+      <button  onClick={()=>setCounter((prevCount)=>prevCount+1)}>Inc</button><br></br>
+      <button onClick={()=>setCounter((prevCount)=>prevCount-1)}>Dec</button>
     </div>
 
   );
