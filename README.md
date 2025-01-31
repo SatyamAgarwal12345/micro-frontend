@@ -1,6 +1,6 @@
 # Micro-Frontend Integration with Module Federation
 
-This repository demonstrates the implementation of a micro-frontend architecture using **Webpack Module Federation**. The project consists of a **Host** application integrating two independent micro-frontends: **Cake** and **IceCream**, both of which manage their own state and communicate with the Host using a `pubSub` utility.
+This repository demonstrates the implementation of a micro-frontend architecture using **Webpack Module Federation**. The project consists of an **MFE** application integrating two independent micro-frontends: **Cake** and **IceCream**, both of which manage their own state and communicate with the MFE using a `pubSub` utility.
 
 ---
 
@@ -19,12 +19,12 @@ This repository demonstrates the implementation of a micro-frontend architecture
 
 ```plaintext
 root (micro-frontend)
-├── host
+├── mfe
 │   ├── src
 │   │   ├── components
 │   │   │   ├── CakeCart.jsx
 │   │   │   ├── IceCreamCart.jsx
-│   │   │   └── App.jsx----- 2 microsevices cake and icecream along with CakeCart and IcecreamCart
+│   │   │   └── App.jsx----- 2 microservices cake and icecream along with CakeCart and IcecreamCart
 │   │   ├── style
 │   │   │   └── cart.css
 │   │   └── utils
@@ -64,30 +64,30 @@ root (micro-frontend)
    ```
 2. Install dependencies for each project:
    ```bash
-   cd host && npm install
+   cd mfe && npm install
    cd cake && npm install
    cd icecream && npm install
    ```
 3. Start the development servers:
    ```bash
    # In separate terminals
-   cd host && npm start
+   cd mfe && npm start
    cd cake && npm start
    cd icecream && npm start
    ```
-4. Open `http://localhost:4000` in your browser to view the Host application.
-5. Open `http://localhost:4001` in your browser to view the Cake Micro Front-end.
-6. Open `http://localhost:4001` in your browser to view the Ice Cream Micro Front-end.
+4. Open `http://localhost:4000` in your browser to view the MFE application.
+5. Open `http://localhost:4001` in your browser to view the Cake Micro-Frontend.
+6. Open `http://localhost:4002` in your browser to view the Ice Cream Micro-Frontend.
 
 ---
 
 ## Webpack Configuration Explained
 
-### Host Application
+### MFE Application
 
 ```javascript
 new ModuleFederationPlugin({
-  name: "host",
+  name: "mfe",
   filename: "remoteEntry.js",
   remotes: {
     cakeMf: "cake@http://localhost:4001/remoteEntry.js",
@@ -103,7 +103,7 @@ new ModuleFederationPlugin({
 });
 ```
 
-- **Remotes**: Declares micro-frontends (Cake and IceCream) that the Host can consume.
+- **Remotes**: Declares micro-frontends (Cake and IceCream) that the MFE can consume.
 - **Exposes**: Shares the `pubSub` utility for state management.
 - **Shared**: Ensures React and ReactDOM are singleton to prevent version conflicts.
 
@@ -133,7 +133,7 @@ new ModuleFederationPlugin({
   name: "icecream",
   filename: "remoteEntry.js",
   remotes: {
-    host: "host@http://localhost:4000/remoteEntry.js",
+    mfe: "mfe@http://localhost:4000/remoteEntry.js",
   },
   exposes: {
     "./IceCream": "./src/components/newIC.jsx",
@@ -146,16 +146,16 @@ new ModuleFederationPlugin({
 });
 ```
 
-- **Remotes**: Allows IceCream to consume the Host application.
+- **Remotes**: Allows IceCream to consume the MFE application.
 - **Exposes**: Shares its IceCream component and local `pubSub` utility.
 
 ---
 
 ## Running the Project
 
-- Start all micro-frontends and the host application using `npm start`.
+- Start all micro-frontends and the MFE application using `npm start`.
 - Navigate to `http://localhost:4000` to view the integration.
-- Perform interactions in the Cake or IceCream micro-frontends to see updates in the Host's Cart component.
+- Perform interactions in the Cake or IceCream micro-frontends to see updates in the MFE's Cart component.
 
 ---
 
@@ -189,9 +189,9 @@ pubSub.subscribe("iceCreamStateChange", (data) => {
 pubSub.publish("iceCreamStateChange", { count: 3 });
 ```
 
-### Host Integration
+### MFE Integration
 
-The Host application renders `CakeCart` and `IceCreamCart` components, which subscribe to `pubSub` events from their respective micro-frontends:
+The MFE application renders `CakeCart` and `IceCreamCart` components, which subscribe to `pubSub` events from their respective micro-frontends:
 
 #### `App.jsx`
 
@@ -204,7 +204,7 @@ import IceCream from "iceCreamMf/IceCream";
 
 const App = () => (
   <div>
-    <h1>Welcome to the Host Application</h1>
+    <h1>Welcome to the MFE Application</h1>
     <Cake />
     <IceCream />
     <CakeCart />
